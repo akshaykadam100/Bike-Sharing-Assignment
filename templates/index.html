@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <link href="{{ url_for('static', filename='css/main.css') }}" rel="stylesheet">
+    <title>Bike Sharing Analytics</title>
+</head>
+
+<body>
+    <h1>Bike Sharing Analytics</h1>
+
+    <form action="{{ url_for('predict')}}"method="post">
+        <table style="width:75%" height = "250">
+            <tr>
+                <td>Date</td>
+                <td><input id="date" required name="date" type="date"></td>
+            </tr>
+
+            <tr>
+                <td>Weather Situation</td>
+                <td>
+                    <select name="weather" id="weather_select">
+                        <option value="1">Clear / Few Clouds / Partly Cloudy</option>
+                        <option value="2">Mist+Cloudy / Mist + Broken Clouds / Mist + Few Clouds / Mist</option>
+                        <option value="3">Light Snow / Light Rain + Thunderstorm / Scattered clouds / Light Rain + Scattered Clouds</option>
+                        <option value="4">Heavy Rain + Ice Pallets + Thunderstorm + Mist / Snow + Fog</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Season</td>
+                <td>
+                    <select name="season" id="season_select">
+                        <option value="1">Spring</option>
+                        <option value="2">Summer</option>
+                        <option value="3">Fall</option>
+                        <option value="4">Winter</option>
+                    </select>
+                </td>
+            </tr>
+
+            <tr>
+                <td>Temperature</td>
+                <td><input type="number" required name="temperature" min="-100" value="20.31" max="100" step="0.01"></td>
+            </tr>
+
+            <tr>
+                <td>Humidity</td>
+                <td><input type="number" required name="humidity" min="0" value="62.76" max="200" step="0.01"></td>
+            </tr>
+
+            <tr>
+                <td>Windspeed</td>
+                <td><input type="number" required name="windspeed" min="-100" value="12.76" max="100" step="0.01"></td>
+            </tr>
+        </table>
+
+        <br><br>
+        <button type="submit">Predict</button>
+
+
+       <br><br><br><br>
+        {{ prediction_text }}
+    </form>
+
+
+
+</body>
+</html>

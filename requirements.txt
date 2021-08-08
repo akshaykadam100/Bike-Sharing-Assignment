@@ -5,15 +5,18 @@ attrs==21.2.0
 backcall==0.2.0
 bleach==3.3.1
 cffi==1.14.6
+click==8.0.1
 cycler==0.10.0
 debugpy==1.4.1
 decorator==5.0.9
 defusedxml==0.7.1
 entrypoints==0.3
+Flask==2.0.1
 ipykernel==6.0.3
 ipython==7.25.0
 ipython-genutils==0.2.0
 ipywidgets==7.6.3
+itsdangerous==2.0.1
 jedi==0.18.0
 Jinja2==3.0.1
 joblib==1.0.1
@@ -68,4 +71,5 @@ tornado==6.1
 traitlets==5.0.5
 wcwidth==0.2.5
 webencodings==0.5.1
+Werkzeug==2.0.1
 widgetsnbextension==3.5.1
