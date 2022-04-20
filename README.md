@@ -1,10 +1,7 @@
 # Bike Sharing Assignment
 
-
 ## Introduction
-
-This assignment is a programming assignment wherein you have to build a model for the prediction of demand for shared bikes. 
-
+In this assignment we need to build a model for the prediction of demand for shared bikes. 
 
 ## Problem Statement
 A bike-sharing system is a service in which bikes are made available for shared use to individuals on a short term basis for a price or free. Many bike share systems allow people to borrow a bike from a "dock" which is usually computer-controlled wherein the user enters the payment information, and the system unlocks it. This bike can then be returned to another dock belonging to the same system.
@@ -18,14 +15,6 @@ Based on various meteorological surveys and people's styles, the service provide
 ## Business Goal:
 It is required to model the demand for shared bikes with the available independent variables. It will be used by the management to understand how exactly the demands vary with different features. They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations. Further, the model will be a good way for management to understand the demand dynamics of a new market.
 
-## Repository:
-Current repository consists of multiple branches:
+## Conclusion:
 
-1. **Main**
-    This repository consists of basic data required for modelling using any technique.
-1. **Linear-Model**
-    This repository consists of Linear Regression model based learning. 
-1. **Neural-Network**
-    This repository consists of Artificial Neural Network (ANN) model based learning.
-
-_Note: End-to-End deployment code will also be included in further updates for Linear Models as well as ANN based leaning models_
+On analysing data, it was observed that, the linear regression model was able to predict bike demand precisely with an R2 Score of more than 80%
